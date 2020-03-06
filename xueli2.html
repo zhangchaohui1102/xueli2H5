@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            line-height:22px;
+        }
+        #top{
+            font-size: 24px;
+            font-style: initial;
+        }
+        span{
+            color:red;
+        }
+        .text{
+            font-size: 18px;
+            color:red;
+        }
+        .bian{
+            width:200px;
+        }
+        button{
+            width:170px;
+        }
+        .all{
+            margin-left: 50px;
+        }
+        .zhongjian{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <p id="top">学生信息</p><br/>
+        <fieldset class="bian">
+            <legend class="text">学生档案</legend>
+            <div class="zhongjian">
+                <form action="#" method="get">
+                    <p>姓名:</p>
+                    <input type="text" placeholder="请输入姓名"  required="required"><span>*</span>
+                    <br/>
+    
+                    <p>学号：</p>
+                    <input  type="number"  placeholder="请输入学号" name="demoNum"  min="1" required="required"/><span>*</span>
+                    <br/>
+    
+                    <p>手机号码:</p>
+                    <input type="tel"  placeholder="请输入手机号" name="p"  required="required"/><span>*</span>
+                    <br/>
+    
+                    <p>邮箱地址:</p>
+                    <input  type="email"  name="email" placeholder="请输入邮箱地址"  required="required" /><span>*</span>
+                    <br/>
+                    
+                    <p>录取学校:</p>
+                    <input type="search" name="sea1" list="names"/>
+                    <datalist id="names">
+                        <option>河北师范大学</option>
+                        <option>河北科技大学</option>
+                        <option>河北医科大学</option>
+                        <option>河北大学</option>
+                        <option>河北工业大学</option>
+                    </datalist>
+                    <br/>
+    
+                    <p>入学成绩：</p>
+                    <input type="number" name="num" />
+                    <br/>
+    
+                    <p>入学时间：</p>
+                    <input type="date" name="date1" style="width:160px;"/>	
+                    <br/><br/>
+                    <button type="button">提交</button><br/><p>&nbsp;</p>
+                </form>
+            </div>
+            
+
+        </fieldset>
+    </div>
+</body>
+</html>
